@@ -1,28 +1,39 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('loginForm');
-    const passwordInput = document.getElementById('password');
-    const errorMessage = document.getElementById('error-message');
-
-    // Senha pré-definida no Front-end (MUITO INSEGURO para uso real!)
-    const CORRECT_PASSWORD = '1234';
+    const form = document.querySelector('.login-form');
+    // Seleciona os campos de input pelo seu atributo 'name'
+    const emailInput = form.querySelector('input[name="email"]'); 
+    const passwordInput = form.querySelector('input[name="senha"]'); 
     
-    // Nome do seu arquivo Dashboard (ajuste se necessário)
-    const DASHBOARD_PAGE = 'index.html'; 
+    // Credenciais de acesso corretas
+    const CORRECT_EMAIL = 'nathaliaproz99@gmail.com';
+    const CORRECT_PASSWORD = 'admin1234';
+    
+    // Nome do arquivo do seu dashboard (verifique se está correto)
+    const DASHBOARD_PAGE = 'dashboard.html'; 
 
     form.addEventListener('submit', (event) => {
         event.preventDefault(); // Impede o envio padrão do formulário
 
+        const enteredEmail = emailInput.value;
         const enteredPassword = passwordInput.value;
-        errorMessage.textContent = ''; // Limpa qualquer mensagem de erro anterior
-
-        if (enteredPassword === CORRECT_PASSWORD) {
-            // Se a senha estiver correta, redireciona para a página do dashboard
+        
+        // Verifica se as credenciais correspondem
+        if (enteredEmail === CORRECT_EMAIL && enteredPassword === CORRECT_PASSWORD) {
+            // Sucesso! Redireciona
+            alert('Login efetuado com sucesso!'); 
             window.location.href = DASHBOARD_PAGE;
         } else {
-            // Se a senha estiver incorreta, exibe a mensagem de erro
-            errorMessage.textContent = 'Senha incorreta. Tente novamente.';
-            passwordInput.value = ''; // Opcional: limpa o campo de senha
+            // Falha no login
+            alert('Acesso negado. E-mail ou senha incorretos.');
+            
+            // Limpa apenas a senha para que o usuário não precise digitar o e-mail novamente
+            passwordInput.value = ''; 
             passwordInput.focus();
         }
+    });
+    
+    // Funcionalidade do botão "Limpar Campos"
+    form.querySelector('.limpar').addEventListener('click', () => {
+        form.reset();
     });
 });
