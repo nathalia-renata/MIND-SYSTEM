@@ -1,0 +1,144 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; /* Fonte simples */
+}
+
+
+:root {
+    --primary-green: #38a169; /* Verde principal do botão */
+    --light-grey: #f0f0f0;    /* Fundo leve */
+    --dark-text: #333;        /* Cor do texto escuro */
+    --box-bg: #fff;           /* Fundo da caixa de login */
+}
+
+/* Estilo do corpo da página (Centralização) */
+body {
+    background-color: var(--light-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Contêiner principal para centralizar o box de login */
+.login-container {
+    width: 100%;
+    max-width: 400px; /* Largura máxima da caixa de login */
+}
+
+/* Estilo da caixa de login (Branca, com sombra) */
+.login-box {
+    background-color: var(--box-bg);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Área do Logo e Título */
+.logo-area {
+    margin-bottom: 30px;
+}
+
+.logo-icon {
+    /* Simulação do ícone circular verde */
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-green);
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    
+}
+
+.logo-area h1 {
+    color: var(--primary-green);
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo dos Campos de Entrada (Input) */
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.login-form input:focus {
+    border-color: var(--primary-green);
+    outline: none;
+}
+
+/* Estilo dos Botões */
+.btn {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+/* Botão Principal (Entrar) - Verde */
+.entrar {
+    background-color: var(--primary-green);
+    color: white;
+}
+
+.entrar:hover {
+    background-color: #318a5c; 
+}
+
+/* Botão Limpar - Transparente/Borda*/
+.limpar {
+    background-color: transparent;
+    color: var(--dark-text);
+    border: 1px solid #ccc;
+}
+
+.limpar:hover {
+    background-color: var(--light-grey);
+}
+
+/* Estilo do Link de Cadastro */
+.link-cadastro {
+    margin-top: 15px;
+    color: var(--primary-green);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.link-cadastro:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade  */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column; /* Coloca os indicadores e o seletor de período um abaixo do outro */
+    }
+    .period-selector-area {
+        width: 100%; /* Faz com que o seletor ocupe a largura total */
+        margin-top: 20px;
+    }
+    .indicator-cards {
+        justify-content: center; /* Centraliza os indicadores */
+    }
+}
+
+
