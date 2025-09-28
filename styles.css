@@ -1,0 +1,19 @@
+
+/* Importa a fonte Inter para o design */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc;
+}
+
+
+.text-mind-system { color: #10B981; } 
+.bg-mind-system { background-color: #10B981; }
+.border-mind-system { border-color: #10B981; }
+
+/* Garante que o modal customizado de alerta fique acima de outros elementos */
+.fixed.inset-0.bg-black.bg-opacity-50.flex.items-center.justify-center.z-\[100\] {
+    z-index: 100;
+}

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIND SYSTEM | Gestão de Clientes e Vendas</title>
+    <!-- Carrega o Tailwind CSS para classes utilitárias -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link para os estilos personalizados (CSS) -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="script.js">
+</head>
+<body class="antialiased text-gray-800">
+
+    <!-- 1. BARRA DE NAVEGAÇÃO -->
+    <header class="sticky top-0 z-50 bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo/Nome do App -->
+                <div class="flex-shrink-0">
+                    <span class="text-2xl font-extrabold text-gray-800">MIND <span class="text-mind-system">SYSTEM</span></span>
+                </div>
+                <!-- Links de Navegação (Hidden on Mobile) -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#solucao" class="text-gray-600 hover:text-mind-system transition duration-300 font-medium">Solução</a>
+                    <a href="#funcionalidades" class="text-gray-600 hover:text-mind-system transition duration-300 font-medium">Recursos</a>
+                    <a href="#vantagens" class="text-gray-600 hover:text-mind-system transition duration-300 font-medium">Vantagens</a>
+                </nav>
+                <!-- CTA na Nav Bar -->
+                <div class="hidden md:block">
+                    <a href="#contato" class="bg-mind-system text-white px-4 py-2 rounded-xl shadow-md hover:bg-emerald-600 transition duration-300 font-medium transform hover:scale-105">
+                        Solicitar Demonstração
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 2. SEÇÃO HERO (Introdução) -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-12">
+                <!-- Texto Principal -->
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-4 text-gray-900">
+                        Gestão de Vendas e Clientes <span class="text-mind-system block md:inline">na Palma da Mão.</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8">
+                        A ferramenta foi desenvolvida com o intuito de oferecer funcionalidades **rápidas, práticas e intuitivas**, aprimorando o desempenho dos seus vendedores e a qualidade do atendimento.
+                    </p>
+                    <a href="#funcionalidades" class="bg-mind-system text-white px-8 py-4 text-lg rounded-xl font-bold shadow-2xl shadow-mind-system/50 hover:bg-emerald-600 transition duration-300 inline-block transform hover:-translate-y-0.5">
+                        Descubra Como
+                    </a>
+                </div>
+
+                <!-- Imagem Mockup (Tela de Login) -->
+                <div class="md:w-1/2 flex justify-center p-4">
+                    <img src="uploaded:5102950580136643413.jpg-84504571-d1c5-431d-911e-a849970a0905" 
+                         alt="Tela de Login do aplicativo MIND SYSTEM" 
+                         class="rounded-3xl shadow-2xl border-4 border-mind-system/50 w-full max-w-sm" 
+                         style="max-height: 600px; object-fit: cover;">
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. SEÇÃO PROBLEMAS E SOLUÇÃO (O que resolvemos) -->
+        <section id="solucao" class="py-16 md:py-20 bg-gray-50">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-gray-900">Simplificamos o Que Era Complexo</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-12">
+                    Nossa proposta central é resolver os desafios da gestão de dados e processos que consomem seu tempo e limitam o crescimento.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Painel 1: Problema (Volume de Dados) -->
+                    <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 border border-gray-200">
+                        <svg class="w-12 h-12 text-mind-system mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10h4m-4-2v-4m0 4h4m-4 0v4h4m4-4h4m0-4h4m-4-2v-4m0 4h4m-4 0v4h4m4-4h4m0-4h4m-4-2v-4m0 4h4m-4 0v4h4M4 7h16M4 17h16M4 7v10m16-10v10"></path></svg>
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-800">Excesso de Informação Desorganizada</h3>
+                        <p class="text-gray-600">
+                            Diante da necessidade de organizar e armazenar um grande volume de dados de clientes e vendas, o MIND SYSTEM transforma tudo em informações **sistematizadas em planilhas e gráficos** para melhor administração.
+                        </p>
+                    </div>
+                    
+                    <!-- Painel 2: Solução (Automatização) -->
+                    <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 border border-gray-200">
+                        <svg class="w-12 h-12 text-mind-system mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-800">Processos Lentos e Manuais</h3>
+                        <p class="text-gray-600">
+                            A proposta central é a **automatização de processos** e a melhoria da qualidade do atendimento ao cliente. Deixe o trabalho repetitivo para o sistema e foque no relacionamento e nas vendas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. SEÇÃO DE FUNCIONALIDADES -->
+        <section id="funcionalidades" class="py-16 md:py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-base text-mind-system font-semibold tracking-wide uppercase">RECURSOS EXCLUSIVOS</h2>
+                    <p class="mt-2 text-3xl sm:text-4xl font-extrabold text-gray-900">
+                        Conheça as Funcionalidades do MIND SYSTEM
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    
+                    <!-- Painel 1: Relatórios e Indicadores (com imagem) -->
+                    <div class="lg:col-span-1">
+                        <div class="p-8 bg-white rounded-2xl shadow-2xl border-l-4 border-mind-system">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-3 flex items-center">
+                                <span class="bg-mind-system/10 p-2 rounded-full mr-3">
+                                    <svg class="w-6 h-6 text-mind-system" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path></svg>
+                                </span>
+                                Área de Relatórios Gerais
+                            </h3>
+                            <p class="text-gray-600 mb-4">
+                                Disponibiliza relatórios visuais e detalhados sobre o desempenho das vendas, bem como as interações dos clientes com a empresa afiliada, permitindo decisões estratégicas em tempo real.
+                            </p>
+                            <a href="#" class="text-mind-system font-semibold hover:underline">Ver Detalhes &rarr;</a>
+                        </div>
+                    
+                    </div>
+
+                    <!-- Lista de Outras Funcionalidades -->
+                    <div class="lg:col-span-1 space-y-8">
+                        
+                        <!-- Funcionalidade: Tela de Pedidos -->
+                        <div class="p-8 bg-white rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-l-4 border-gray-200 hover:border-mind-system">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2 flex items-center">
+                                <span class="bg-mind-system/10 p-2 rounded-full mr-3">
+                                    <svg class="w-5 h-5 text-mind-system" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                                </span>
+                                2.1 Tela de Pedidos
+                            </h3>
+                            <p class="text-gray-600">
+                                Permite a visualização e organização dos pedidos de um cliente específico, bem como a consulta rápida de **todos os pedidos realizados** com facilidade.
+                            </p>
+                        </div>
+
+                        <!-- Funcionalidade: Tela de Clientes -->
+                        <div class="p-8 bg-white rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-l-4 border-gray-200 hover:border-mind-system">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2 flex items-center">
+                                <span class="bg-mind-system/10 p-2 rounded-full mr-3">
+                                    <svg class="w-5 h-5 text-mind-system" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H4a2 2 0 01-2-2V7a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2zm-2-8a3 3 0 11-6 0 3 3 0 016 0zm-2 0h-2"></path></svg>
+                                </span>
+                                2.2 Tela de Clientes
+                            </h3>
+                            <p class="text-gray-600">
+                                Acompanhe a situação de cada cliente, classificando-os de forma clara como **ativos, em análise, com pagamento pendente**, garantindo um controle total da sua carteira.
+                            </p>
+                        </div>
+
+                        <!-- Funcionalidade: Tela de Vendas e Produtos (com AR) -->
+                        <div class="p-8 bg-white rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-l-4 border-gray-200 hover:border-mind-system">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2 flex items-center">
+                                <span class="bg-mind-system/10 p-2 rounded-full mr-3">
+                                    <svg class="w-5 h-5 text-mind-system" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-2.485 0-4 2.015-4 4v4h8v-4c0-1.985-1.515-4-4-4z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18V21m-6-6h12a2 2 0 002-2V5a2 2 0 00-2-2H6a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                                </span>
+                                2.3 Tela de Vendas e Produtos com AR
+                            </h3>
+                            <p class="text-gray-600">
+                                Catálogo completo de itens e serviços. Inclui recursos de **Realidade Aumentada (AR)** com leitor de código de barras/QR integrado, modernizando o processo de venda.
+                            </p>
+                        </div>
+                        
+                        <!-- Funcionalidade: ChatBot -->
+                        <div class="p-8 bg-white rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-l-4 border-gray-200 hover:border-mind-system">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2 flex items-center">
+                                <span class="bg-mind-system/10 p-2 rounded-full mr-3">
+                                    <svg class="w-5 h-5 text-mind-system" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.69A9.73 9.73 0 013 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+                                </span>
+                                2.4 ChatBot e Atendente Virtual
+                            </h3>
+                            <p class="text-gray-600">
+                                Ferramenta que viabiliza a **comunicação entre vendedores**, contando com o suporte de uma atendente virtual para facilitar o processo de vendas e a navegação.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. SEÇÃO VANTAGENS (Considerações Finais) -->
+        <section id="vantagens" class="py-20 md:py-24 bg-mind-system text-white">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-12">Por Que o MIND SYSTEM é Essencial para Sua Empresa?</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <!-- Vantagem 1: Eficiência Organizacional -->
+                    <div class="p-6 bg-white/10 rounded-xl shadow-xl border-t-4 border-white/50">
+                        <svg class="w-10 h-10 text-white mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8m0 0V9m0-2h4m-4 0v4m-4-4h4m-4 0v4m-4-4h4m-4 0v4m-4-4h4m-4 0v4"></path></svg>
+                        <h3 class="text-xl font-semibold mb-3">Maior Eficiência</h3>
+                        <p class="text-gray-200">
+                            Proporciona maior eficiência organizacional através da automatização e sistematização de dados cruciais de vendas.
+                        </p>
+                    </div>
+
+                    <!-- Vantagem 2: Melhoria no Atendimento -->
+                    <div class="p-6 bg-white/10 rounded-xl shadow-xl border-t-4 border-white/50">
+                        <svg class="w-10 h-10 text-white mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.664a2 2 0 01-1.789-2.894l3.5-7A2 2 0 0114 10zM5.113 14h-1.39A2.25 2.25 0 001.62 16.25c0 1.242.98 2.25 2.25 2.25h1.39M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        <h3 class="text-xl font-semibold mb-3">Melhor Atendimento</h3>
+                        <p class="text-gray-200">
+                            Apoia a melhoria da qualidade do atendimento ao cliente com acesso rápido e organizado a todo o histórico e status.
+                        </p>
+                    </div>
+
+                    <!-- Vantagem 3: Suporte Estratégico -->
+                    <div class="p-6 bg-white/10 rounded-xl shadow-xl border-t-4 border-white/50">
+                        <svg class="w-10 h-10 text-white mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l2-2 2 2v13M10 17H6a2 2 0 01-2-2v-4a2 2 0 012-2h4m1 11h4a2 2 0 002-2v-4a2 2 0 00-2-2h-4"></path></svg>
+                        <h3 class="text-xl font-semibold mb-3">Decisões Estratégicas</h3>
+                        <p class="text-gray-200">
+                            Oferece suporte estratégico aos processos comerciais com relatórios detalhados, permitindo uma visão clara do desempenho.
+                        </p>
+                    </div>
+                </div>
+                
+                <p class="mt-12 text-lg font-medium">
+                    O MIND SYSTEM é um instrumento eficaz de apoio à gestão de clientes e vendas.
+                </p>
+            </div>
+        </section>
+
+        <!-- 6. SEÇÃO CTA FINAL (Contato) -->
+        <section id="contato" class="py-16 md:py-20">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center bg-white p-8 rounded-2xl shadow-xl">
+                <h2 class="text-3xl font-bold mb-4 text-gray-900">Pronto para Transformar Suas Vendas?</h2>
+                <p class="text-xl text-gray-600 mb-8">
+                    Peça uma demonstração gratuita e veja na prática como o MIND SYSTEM pode impulsionar sua equipe.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <!-- ID adicionado para ser manipulado pelo script.js -->
+                    <button id="demoButton"
+                            class="bg-mind-system text-white px-8 py-4 text-lg rounded-xl font-bold shadow-2xl shadow-mind-system/50 hover:bg-emerald-600 transition duration-300 transform hover:-translate-y-0.5">
+                        Solicitar Demonstração Agora
+                    </button>
+                    <a href="#funcionalidades" class="bg-gray-200 text-gray-800 px-8 py-4 text-lg rounded-xl font-bold shadow-md hover:bg-gray-300 transition duration-300 transform hover:-translate-y-0.5">
+                        Ver Mais Detalhes
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 7. RODAPÉ -->
+    <footer class="bg-gray-800 text-white mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-lg font-extrabold mb-4 md:mb-0">
+                    MIND <span class="text-mind-system">SYSTEM</span>
+                </div>
+                <p class="text-sm text-gray-400">
+                    &copy; 2025 MIND SYSTEM. Todos os direitos reservados.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#solucao" class="text-gray-400 hover:text-mind-system text-sm">Política de Privacidade</a>
+                    <a href="#solucao" class="text-gray-400 hover:text-mind-system text-sm">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link para o script com a lógica do modal customizado -->
+    <script src="script.js"></script>
+</body>
+</html>
